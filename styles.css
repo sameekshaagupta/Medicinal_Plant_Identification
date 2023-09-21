@@ -90,23 +90,9 @@ h1 span:nth-child(9)
 {
     animation-delay: 2.7s;
 }
-/* body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-} */
-
-/* Global styles */
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-} */
 
 .container {
-
     margin: 0 auto;
-    /* padding: 20px; */
-
 }
 
 /* Hero section styles */
