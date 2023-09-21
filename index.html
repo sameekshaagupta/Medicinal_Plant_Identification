@@ -2,26 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicinal Plant Identification</title>
     <link rel="stylesheet" href="styles.css">
+    <title>MedoPlant</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1><a href="/">MediPlants</a></h1>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+    <section id= "smooke">
+        <div class="smoke">
+        <video src="smoke.mp4" autoplay muted ></video>
+        <h1>
+            <span>M</span>
+            <span>E</span>
+            <span>D</span>
+            <span>I</span>
+            <span>P</span>
+            <span>L</span>
+            <span>A</span>
+            <span>N</span>
+            <span>T</span>
+        </h1>
+        </div>
+    </section>
     <section id="hero">
-        <div class="container">
+        <div class="container2">
+            <div class="copy-box">
+                
+                <div class="inner">
+                    <div class="line right">
+                    <div class="scanner"></div></div>
             <h2>Identify Medicinal Plants with Ease</h2>
             <p>Upload an image of a plant, and we'll help you identify it using AI.</p>
             <div class="upload">
@@ -30,8 +39,10 @@
             </div>
             <div class="button">
                 <button onclick="identifyPlant()" class="button-49" role="button">Identify Plant</button>
+                </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="results">
@@ -40,13 +51,15 @@
             <div id="result" class="result-placeholder">Results will appear here.</div>
         </div>
     </section>
-
+    
     <footer>
         <div class="container">
             <p>&copy; 2023 MediPlants. All rights reserved.</p>
         </div>
     </footer>
 
+
     <script src="script.js"></script>
+    
 </body>
 </html>
