@@ -17,6 +17,17 @@ function identifyPlant(imageData) {
     }, 2000); // Simulate a 2-second delay (adjust as needed)
 }
 
+
+const fileInput = document.getElementById('file');
+    const identifyButton = document.getElementById('identifyButton');
+
+    fileInput.addEventListener('change', function() {
+        if (fileInput.files.length > 0) {
+            identifyButton.removeAttribute('disabled');
+        } else {
+            identifyButton.setAttribute('disabled', 'true');
+        }
+    });
 // Display the identification result
 function displayResult(result) {
     const resultDiv = document.getElementById("result");
@@ -40,3 +51,11 @@ document.getElementById("imageInput").addEventListener("change", function (event
         reader.readAsDataURL(file);
     }
 });
+
+function showPreview(input) {
+    if (input.files.length > 0) {
+        var src = URL.createObjectURL(input.files[0]);
+        var preview = document.getElementById("image");
+        preview.src = src;
+    }
+}
