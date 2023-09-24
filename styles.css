@@ -97,7 +97,7 @@ h1 span:nth-child(9)
 
 /* Hero section styles */
 #hero {
-    background-image: url('assests/pexels-kate-trifo-3804996.jpg');
+    background-image: url('https://source.unsplash.com/random/900x700/?leaves');
     background-size: cover;
     background-position: centers;
     text-align: center;
@@ -169,6 +169,10 @@ input[type="file"] {
     padding-top: 40px;
 }
 /* CSS */
+
+#identifyButton[disabled] {
+    cursor: not-allowed;
+}
 .button-49,
 .button-49:after {
   width: 140px;
@@ -273,6 +277,19 @@ input[type="file"] {
 
 
 /* Results section styles */
+
+.container3{
+    width:35rem;
+    height:10rem;
+    display: flex;
+    align-content: center;
+}
+#image{
+    
+    width:200px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
 #results {
     background-color: #fff;
     padding: 40px 50px;
