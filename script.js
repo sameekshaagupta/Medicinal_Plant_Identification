@@ -10,7 +10,7 @@ function identifyPlant(imageData) {
     // Simulate an asynchronous request (replace with actual API call)
     setTimeout(() => {
         // Simulated identification result (replace with actual result)
-        const identificationResult = "The plant is identified as: <strong>Tulsi (Holy Basil)</strong>";
+        const identificationResult = "<strong>ERROR 404</strong> No Result Found!";
 
         // Display the identification result
         displayResult(identificationResult);
