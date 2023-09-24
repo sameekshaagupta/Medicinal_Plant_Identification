@@ -34,29 +34,30 @@
             <h2>Identify Medicinal Plants with Ease</h2>
             <p>Upload an image of a plant, and we'll help you identify it using AI.</p>
             <div class="upload">
-                <input type="file" id="file" accept="image/*" ">
+                <input type="file" id="file" accept="image/*" onchange="showPreview(this)">
                 <label for="file">Choose an Image</label>
             </div>
             <div class="button">
-                <button onclick="identifyPlant()" class="button-49" role="button">Identify Plant</button>
-                </div>
+                <button id="identifyButton" onclick="identifyPlant()" class="button-49" role="button" disabled>Identify Plant</button>
             </div>
+            
         </div>
     </div>
     </section>
-
+    <br>
     <section id="results">
-        <div class="container">
-            <h2>Identification Results</h2>
+        <h2>Identification Results</h2>
+        <div class="container3">
+            <img id="image" src="" alt="Image Preview" />
             <div id="result" class="result-placeholder">Results will appear here.</div>
         </div>
     </section>
     
-    <footer>
-        <div class="container">
+    <!-- <footer> -->
+        <!-- <div class="container">
             <p>&copy; 2023 MediPlants. All rights reserved.</p>
         </div>
-    </footer>
+    </footer> -->
 
 
     <script src="script.js"></script>
